@@ -124,26 +124,57 @@
 }
 </style>
 
-<!-- Home_Page -->
+<!-- Home1 -->
 <template>
-<v-app>
-  <v-card>
-    <v-app-bar 
-    color="#FFFFFF"
-    >
-      <v-img src="@/assets/icon1.png" class="icon1"></v-img>
-      <v-toolbar-title class="F1">Factoring</v-toolbar-title> 
-      <v-spacer/> 
-      <v-btn class="btn1" text>เกี่ยวกับเรา</v-btn>
-      <v-btn class="btn1" text>ล็อคอินแฟคเตอร์ลิ่ง</v-btn>
-      <v-btn class="btn1" text>ล็อคอินเซลเลอร์</v-btn>
-      <v-app-bar-nav-icon ></v-app-bar-nav-icon>
-    </v-app-bar>
+<div class="bg">
+<v-layout>
+    <v-row >
+      <v-col 
+        cols="auto"
+        xs="auto"
+        md="6"
+      >
+        <v-app-bar-title class="h1">
+        สินเชื่อแฟคเตอริ่ง
+        </v-app-bar-title>
 
-  </v-card>
-</v-app>
+        <v-app-bar-title class="h2">
+        <br/>
+        เป็นสินเชื่อที่ไม่ต้องใช้หลักทรพย์คำประกัน <br/>
+        เพียงแค่มีใบแจ้งหนี้ XXXX
+        <br/>
+        และยังช่วยเสริมสภาพคล่องทางธุรกิจของท่าน
+        <br/>
+        ช่วยจำกัดระยะเวลาที่ต้องการรอการชำระเงินจากลูกหนี้
+        <br/>
+          โดยท่านสามารถ "รับเงินล่วงหนาสูงสุดถึง XXX
+        <br/>
+        ภายในเวลา 24 ชั่วโมง" XXXX  
+        </v-app-bar-title>
+      </v-col>
+
+      <v-col
+        cols="12"
+        xs="6"
+        md="6"
+      >
+        <v-card
+          class="pa-12 ma-0"
+          tile
+        >
+        <v-img
+         class="p1"
+          src="https://sv1.picz.in.th/images/2021/06/11/sYlbUP.jpg"
+        >
+        </v-img>
+        </v-card>
+        
+      </v-col>
+    </v-row>
+</v-layout>
+</div>
+
 </template>
-
 
 
 <script>
@@ -154,20 +185,11 @@
       group: null,
     }),
   }
-
-
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
-
-.icon1
-{
-  max-width: 50px;
-  max-height: 50px;
-}
-
 .h1
 {
   font-size: 45px;
@@ -185,8 +207,8 @@
 .F1
 {
   font-family: 'Sarabun', sans-serif;
-  font-size: 35px;
-  padding:50px px 50px;
+  font-size: 25px;
+  padding: 15px;
 }
 .v-list-item
 {
@@ -205,7 +227,6 @@
   height:auto;
 }
 .bg
-.bgcon
 {
   background-color:#1A237E;
 }
@@ -244,31 +265,5 @@
   margin: -30px 20px 10px;
   font-family: 'Sarabun', sans-serif;
 }
-.btn1
-{
-  font-family: 'Sarabun', sans-serif;
-}
 </style>
 
-
-<!--App.vue-->
-<template>
-<div>
-  <Navbar/>
-  <Home1/>
-  <router-view/>
-</div>
-</template>
-
-<script>
-import Home1 from '@/views/Home1.vue';
-import Navbar from '@/components/Navbar.vue';
-export default{
-  components: {
-    Navbar,
-    Home1
-  
-    },
-};
-
-</script>
