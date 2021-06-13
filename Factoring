@@ -127,11 +127,10 @@
 <!-- Home1 -->
 <template>
 <div class="bg">
-<v-layout>
+<v-layout fluid>
     <v-row >
       <v-col 
-        cols="auto"
-        xs="auto"
+        xs="6"
         md="6"
       >
         <v-app-bar-title class="h1">
@@ -194,20 +193,20 @@
 {
   font-size: 45px;
   color: #FFFFFF;
-  margin: 70px 1px 40px;
+  padding: 50px 50px 40px;
   font-family:'Sarabun', sans-serif;
 }
 .h2
 {
   color: #FFFFFF;
-  font-size: 30px;
-  margin: -50px 1px 10px;
+  font-size: 25px;
+  margin: -70px 50px 10px;
   font-family: 'Sarabun', sans-serif;
 }
 .F1
 {
   font-family: 'Sarabun', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   padding: 15px;
 }
 .v-list-item
@@ -224,7 +223,7 @@
 .p1
 {
   width: auto;
-  height:auto;
+  height:560px;
 }
 .bg
 {
